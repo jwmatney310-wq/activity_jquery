@@ -1,0 +1,141 @@
+/* Jackson Matney | October 8, 2026 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f5fa;
+    color: #203040;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 24px 16px;
+    background-color: #175b94;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 24px;
+    border: 1px solid #ccd8e3;
+    border-radius: 6px;
+    background-color: white;
+}
+
+h2 {
+    margin: 0 0 8px;
+    color: #175b94;
+    font-size: 1.4rem;
+}
+
+a {
+    color: #175b94;
+}
+
+.resource-links {
+    font-size: 0.9rem;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #64748b;
+    border-radius: 4px;
+    color: #203040;
+    background-color: white;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input.error,
+textarea.error {
+    border-color: #b42318;
+    background-color: #fff3f2;
+}
+
+span.error {
+    display: block;
+    margin-top: 4px;
+    color: #b42318;
+    font-size: 0.9rem;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 24px;
+    border: 2px solid #175b94;
+    border-radius: 4px;
+    background-color: #175b94;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #103d63;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid #175b94;
+    outline-offset: 2px;
+}
+
+#result {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+footer {
+    padding: 16px;
+    background-color: #103d63;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 599px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 16px;
+    }
+}

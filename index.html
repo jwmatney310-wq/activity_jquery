@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Jackson Matney | October 8, 2026 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Uses of jQuery</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script>
+        // Load jQuery from its CDN if the local copy did not load.
+        if (!window.jQuery) {
+            document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>');
+        }
+    </script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/form-validation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Common Uses of jQuery</h1>
+        <p>Jackson Matney | CTI110</p>
+    </header>
+    <main>
+        <section>
+            <h2>What I Learned</h2>
+            <p id="summary">jQuery is a JavaScript library that makes common webpage tasks easier. It can select HTML elements, change text and styles, respond to clicks, and create animations. It also supports Ajax, which lets a page load data without reloading the entire page. Plugins add more features, such as checking required fields and email addresses. On this page, jQuery changes this paragraph's text color, and the jQuery Validation plugin checks the contact form.</p>
+            <p class="resource-links">
+                <a href="https://jquery.com/">jQuery overview</a> |
+                <a href="https://jqueryvalidation.org/">jQuery Validation plugin</a> |
+                <a href="https://jqueryvalidation.org/documentation/">Plugin documentation</a>
+            </p>
+        </section>
+        <section>
+            <h2>Contact Form</h2>
+            <p>All three fields are required.</p>
+            <form id="contact-form" novalidate>
+                <label for="name">Name (required)</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+
+                <label for="email">Email address (required)</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="message">Message (required)</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="result" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Jackson Matney</p>
+    </footer>
+</body>
+</html>
